@@ -1,10 +1,10 @@
 name: Proposal for an Amendment
 description: The information in this issue will be kept up to date and may be referenced in the submission for WMO adoption. 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to add this user story!
+#  - type: markdown
+#    attributes:
+#      value: |
+#        Thanks for taking the time to add this user story!
   - type: textarea
     id: amendment-proposal
     attributes:
