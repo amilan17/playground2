@@ -1,5 +1,17 @@
 name: Proposal for an Amendment
 description: The information in this issue will be kept up to date and may be referenced in the submission for WMO adoption. 
+The proposal for the amendment shall, at a minimum, contain the following information:
+1)	Title and, as applicable, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivision of the publication to which the amendment applies,
+2)	Details of the amendment,
+3)	Rationale for the amendment,
+4)	Originator of the initial request (entity or person).
+The proposal should also include the following information:
+1)	Expected impact of the amendment on Members, users of services, international organizations and other WMO publications,
+2)	Names of WMO Members and WMO bodies, including subsidiary bodies of constituent bodies, that were consulted during, or assisted with, the drafting of the proposal,
+3)	Proposed implementation date, that is, the date on which the amendment will become effective,
+4)	Validation information, where applicable.
+If the amendment concerns changes that may impact automated processing systems, these changes should be tested using at least two independently developed tool sets and two independent centres, and the resulting validation information should be included with the proposal.
+
 body:
 #  - type: markdown
 #    attributes:
@@ -8,8 +20,8 @@ body:
   - type: textarea
     id: amendment-proposal
     attributes:
-      label: User story
-      description: Also, why is this important?
+      label: Initial proposal
+      description: Brief descriptive overview of the amendments... 
       placeholder: What will the outcome be!
       value: "As a (CDMS user type), I want to (do something) so that (goal)."
     validations:
