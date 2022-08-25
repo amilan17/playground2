@@ -1,82 +1,93 @@
 name: Proposal for an Amendment
-description: The information in this issue will be kept up to date and may be referenced in the submission for WMO adoption. 
-#The proposal for the amendment shall, at a minimum, contain the following information:
-#1)	Title and, as applicable, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivision of the publication to which the amendment applies,
-#2)	Details of the amendment,
-#3)	Rationale for the amendment,
-#4)	Originator of the initial request (entity or person).
-#The proposal should also include the following information:
-#1)	Expected impact of the amendment on Members, users of services, international organizations and other WMO publications,
-#2)	Names of WMO Members and WMO bodies, including subsidiary bodies of constituent bodies, that were consulted during, or assisted with, the drafting of the proposal,
-#3)	Proposed implementation date, that is, the date on which the amendment will become effective,
-#4)	Validation information, where applicable.
-#If the amendment concerns changes that may impact automated processing systems, these changes should be tested using at least two independently developed tool sets and two independent centres, and the resulting validation information should be included with the proposal.
-
+description: The information in this issue will be kept up to date and may be referenced in the submission for WMO adoption.
 body:
-#  - type: markdown
-#    attributes:
-#      value: |
-#        Thanks for taking the time to add this user story!
-  - type: textarea
-    id: amendment-proposal
+  - type: markdown
     attributes:
-      label: Initial proposal
-      description: Brief descriptive overview of the amendments... 
-      placeholder: What will the outcome be!
-      value: "As a (CDMS user type), I want to (do something) so that (goal)."
-    validations:
-      required: true
+      value: |
+        Thanks for taking the time to add this user story!
   - type: textarea
-    id: lineage
+    id: initial-amendment-proposal
     attributes:
-      label: Lineage
-      description: Where this comes from?
-      placeholder: and what changes have been made!
-      value: "Originator and subsequent editors"
+      label: Initial request
+      description: Initial request that provides an summary of the amendments requested. Include as much relevant information possible. *This will not be edited after the issue is submitted to GitHub*.
+      placeholder: Initial request
+      value: "e.g. "
     validations:
       required: true
   - type: input
-    id: priority
+    id: originator
     attributes:
-      label: Priority
-      description: How important is this [1 (low) - 5 (high)] ?
-      placeholder: priority
-      value: "3"
+      label: originator
+      description: Name of individual(s) or groups(s) and affiliation that are requesting the amendment.
+      placeholder: originator
+      value: "e.g. "
     validations:
       required: true
   - type: textarea
-    id: acceptance
+    id: publication
     attributes:
-      label: Acceptance criteria
-      description: Please provide 1..n acceptance criteria to help further understand the requirement
-      placeholder: Tell us what you see!
-      value: "- [ ] Criteria 1"
+      label: Publication(s)
+      description: Title and, as applicable, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivisions of the publication to which the amendment applies.
+      placeholder: publication
+      value: "e.g. Manual on Codes (WMO-No. 306), Volume I.2, BUFR Table D, Category 01 and CCT"
     validations:
       required: true
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: amendment-details
     attributes:
-      label: Definition of done
-      description: Predefined list of what done looks like
-      options:
-        - label: unit/functional tests added/updated
-          required: false
-        - label: documentation updated
-          required: false
-        - label: live demonstration provided
-          required: false
+      label: Amendment details 
+      description: Full description of exact changes proposed. This content may evolve as decisions are finalized. 
+      placeholder: amendment-details
+      value: "e.g.... "
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Enter details of validation, if applicable.
+      placeholder: validation
+      value: "e.g."
+    validations:
+      required: false
+  - type: textarea
+    id: consultations
+    attributes:
+      label: Consultations
+      description: Names of WMO Members and WMO bodies, including subsidiary bodies of constituent bodies, that were consulted during, or assisted with, the drafting of the proposal.
+      placeholder: consultations
+      value: "e.g."
+    validations:
+      required: false
   - type: textarea
     id: references
     attributes:
       label: References
-      description: Please provide any additional information of links to extertnal references here.
+      description: Other publications or websites that were reviewed during the drafting of the proposal.
       placeholder: references
-      value: "WMO No. 1131, requirement 3.1.1.3 (Usage constraints)"
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      value: "e.g."
     validations:
-      required: false
+      required: false      
+# checkbox example
+# - type: checkboxes
+#    id: terms
+#    attributes:
+#      label: Definition of done
+#      description: Predefined list of what done looks like
+#      options:
+#        - label: unit/functional tests added/updated
+#          required: false
+#        - label: documentation updated
+#          required: false
+#        - label: live demonstration provided
+#          required: false
+
+# input example    
+ # - type: input
+ #   id: contact
+ #   attributes:
+ #     label: Contact Details
+ #     description: Expected impact of the amendment on Members, users of services, international organizations and other WMO publications,
+ #     placeholder: ex. email@example.com
+ #   validations:
+ #     required: false
