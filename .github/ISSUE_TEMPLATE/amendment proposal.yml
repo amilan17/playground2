@@ -1,14 +1,12 @@
-name: User story
-description: Add a user story
-title: "[User story]: "
-labels: ["user-story"]
+name: Proposal for an Amendment
+description: The information in this issue will be kept up to date and may be referenced in the submission for WMO adoption. 
 body:
   - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to add this user story!
+#    attributes:
+#      value: |
+#        Thanks for taking the time to add this user story!
   - type: textarea
-    id: user-story
+    id: amendment-proposal
     attributes:
       label: User story
       description: Also, why is this important?
