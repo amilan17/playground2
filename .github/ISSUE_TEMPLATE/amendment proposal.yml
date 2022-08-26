@@ -1,20 +1,20 @@
 name: Proposal for an Amendment
-description: Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procdure.
+description: Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procedure.
+title: "[Enter table name, number, and a very brief description]"
 body:
   - type: markdown
     attributes:
-      value: |
-        The content in this issue will be kept up to date during the drafting of the proposal. It may be referenced in the submission for WMO adoption. 
+      value: The content in this issue, excluding the initial request, will be kept up to date during the drafting of the proposal. Please pay attention to accuracy, spelling and grammar as it may be referenced in an official document for WMO adoption. 
   - type: textarea
-    id: initial-amendment-proposal
+    id: initial-request
     attributes:
       label: Initial request
-      description: Initial request that provides a summary of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose and usage. *This field will not be edited after the issue is submitted to GitHub*.
+      description: Overview description of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose, users or implementation plans. *This field should not be edited after the issue is submitted to GitHub*.
       placeholder: Initial request
       value: "e.g. "
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: originator
     attributes:
       label: originator
@@ -42,14 +42,26 @@ body:
     validations:
       required: true
   - type: textarea
+    attributes:
+      label: Comments
+      description: Other information that may be informative and relevant.
+      placeholder: "e.g. "
+  - type: dropdown
+    attributes:
+      label: Expected impact of change
+      description: Choose LOW (for editorial changes to existing codes), MEDIUM (for new codes) or HIGH (for deprecated and superseded codes)
+      multiple: false
+      options:
+        - "LOW"
+        - "MEDIUM"
+        - "HIGH"
+  - type: textarea
     id: validation
     attributes:
       label: Validation
       description: Enter details of validation, if applicable.
       placeholder: validation
       value: "e.g."
-    validations:
-      required: false
   - type: textarea
     id: consultations
     attributes:
@@ -57,37 +69,10 @@ body:
       description: Names of WMO Members and WMO bodies, including subsidiary bodies of constituent bodies, that were consulted during, or assisted with, the drafting of the proposal.
       placeholder: consultations
       value: "e.g."
-    validations:
-      required: false
   - type: textarea
     id: references
     attributes:
       label: References
-      description: Other publications or websites that were reviewed during the drafting of the proposal.
+      description: Other publications, websites or resources that were reviewed during the drafting of the proposal.
       placeholder: references
       value: "e.g."
-    validations:
-      required: false      
-# checkbox example
-# - type: checkboxes
-#    id: terms
-#    attributes:
-#      label: Definition of done
-#      description: Predefined list of what done looks like
-#      options:
-#        - label: unit/functional tests added/updated
-#          required: false
-#        - label: documentation updated
-#          required: false
-#        - label: live demonstration provided
-#          required: false
-
-# input example    
- # - type: input
- #   id: contact
- #   attributes:
- #     label: Contact Details
- #     description: Expected impact of the amendment on Members, users of services, international organizations and other WMO publications,
- #     placeholder: ex. email@example.com
- #   validations:
- #     required: false
