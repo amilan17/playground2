@@ -9,16 +9,20 @@ body:
     id: initial-request
     attributes:
       label: Initial request
-      description: Overview description of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose, stakeholders and implementation plans. *This field should not be edited after the issue is submitted to GitHub*.
-      placeholder: Initial request
+      description: Overview description of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose, stakeholders and implementation plans. *This field should not be edited by anyone else than the requestor.*.
+      placeholder: Enter summary of request for amendment(s).
     validations:
       required: true
   - type: textarea
-    id: originator
+    id: Requestor
     attributes:
-      label: Originator(s)
+      label: Requestor(s)
       description: Name of individuals, groups, or organizations that are requesting the amendment. Include relevant affiliations, if applicable.
-      placeholder: originator
+      placeholder: Enter requestor details.
+      value: "
+        * individual name and affiliation
+        * WMO body name
+        "
     validations:
       required: true
   - type: textarea
@@ -26,7 +30,7 @@ body:
     attributes:
       label: Publication(s)
       description: Publication title, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivisions of the publication to which the amendment applies.
-      placeholder: publication
+      placeholder: Enter publication name and location of amendment in the publication.
       value: "Example: Manual on Codes (WMO-No. 306), Volume I.2, BUFR code table 0 20 009"
     validations:
       required: true
@@ -35,7 +39,7 @@ body:
     attributes:
       label: Amendment details 
       description: Full description of exact changes proposed. This content may evolve as decisions are finalized. 
-      placeholder: amendment-details
+      placeholder: Enter details of amendments requested. 
       value: "Example: 
           FXY|ElementName_en|CodeFigure|EntryName_en
           --|--|--|--
@@ -62,16 +66,16 @@ body:
     attributes:
       label: Collaborators
       description: Names of groups or individuals (and affiliation) that were consulted during, or assisted with, the drafting of the proposal.
-      placeholder: consultations
+      placeholder: Enter collaborator details.
   - type: textarea
     id: references
     attributes:
       label: References
       description: Other publications, websites or resources that were reviewed during the drafting of the proposal.
-      placeholder: references
+      placeholder: Enter references reviewed. 
   - type: textarea
     id: validation
     attributes:
       label: Validation
       description: Details of new codes validation, if applicable.  
-      placeholder: validation
+      placeholder: Enter if validation was performed.
