@@ -18,7 +18,7 @@ body:
     attributes:
       label: Amendment details 
       description: Full description of exact changes proposed. This content may evolve as decisions are finalized.
-      placeholder: Enter details of amendments requested. Site for converting csv to markdown: https://www.convertcsv.com/csv-to-markdown.htm
+      placeholder: Enter details of amendments requested. Convert CSV to Markdown at https://www.convertcsv.com/csv-to-markdown.htm
     validations:
       required: true
   - type: textarea
