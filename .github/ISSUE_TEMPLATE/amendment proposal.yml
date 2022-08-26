@@ -1,5 +1,5 @@
 name: Proposal for an Amendment
-description: Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procedure.
+description: _Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procedure._
 title: "[Enter table name, number, and a very brief description]"
 body:
   - type: markdown
@@ -37,11 +37,11 @@ body:
       description: Full description of exact changes proposed. This content may evolve as decisions are finalized. 
       placeholder: amendment-details
       value: "Example: 
-        FXY|ElementName_en|CodeFigure|EntryName_en
-        --|--|--|--
-        020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
-        020009|General weather indicator (TAF/METAR)|6-14|Reserved
-        "
+          FXY|ElementName_en|CodeFigure|EntryName_en
+          --|--|--|--
+          020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
+          020009|General weather indicator (TAF/METAR)|6-14|Reserved
+          "
     validations:
       required: true
   - type: textarea
