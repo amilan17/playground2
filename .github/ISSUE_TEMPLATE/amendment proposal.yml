@@ -21,10 +21,10 @@ body:
       placeholder: Enter details of amendments requested. 
       value: "Example in markdown format: 
           
-          FXY|ElementName_en|CodeFigure|EntryName_en
-          --|--|--|--
-          020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
-          020009|General weather indicator (TAF/METAR)|6-14|Reserved
+      FXY|ElementName_en|CodeFigure|EntryName_en
+      --|--|--|--
+      020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
+      020009|General weather indicator (TAF/METAR)|6-14|Reserved
 
           Site for converting csv to markdown: https://www.convertcsv.com/csv-to-markdown.htm
           "
