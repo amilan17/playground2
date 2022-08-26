@@ -60,7 +60,7 @@ body:
   - type: textarea
     id: consultations
     attributes:
-      label: Consultations
+      label: Collaborators
       description: Names of groups or individuals (and affiliation) that were consulted during, or assisted with, the drafting of the proposal.
       placeholder: consultations
   - type: textarea
