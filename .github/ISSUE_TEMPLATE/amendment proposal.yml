@@ -17,8 +17,8 @@ body:
   - type: textarea
     id: originator
     attributes:
-      label: originator
-      description: Name of individual(s) or groups(s) and affiliation that are requesting the amendment.
+      label: Originator(s)
+      description: Name of individuals, groups, or organizations that are requesting the amendment. Include relevant affiliations, if applicable.
       placeholder: originator
       value: "e.g. "
     validations:
@@ -27,9 +27,9 @@ body:
     id: publication
     attributes:
       label: Publication(s)
-      description: Title and, as applicable, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivisions of the publication to which the amendment applies.
+      description: Publication title, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivisions of the publication to which the amendment applies.
       placeholder: publication
-      value: "e.g. Manual on Codes (WMO-No. 306), Volume I.2, BUFR Table D, Category 01 and CCT"
+      value: "e.g. Manual on Codes (WMO-No. 306), Volume I.2, BUFR Table D, Category 01 and CCT 03"
     validations:
       required: true
   - type: textarea
@@ -38,7 +38,12 @@ body:
       label: Amendment details 
       description: Full description of exact changes proposed. This content may evolve as decisions are finalized. 
       placeholder: amendment-details
-      value: "e.g.... "
+      value: "Example: 
+FXY|ElementName_en|CodeFigure|EntryName_en
+--|--|--|--
+020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
+020009|General weather indicator (TAF/METAR)|6-14|Reserved
+"
     validations:
       required: true
   - type: textarea
