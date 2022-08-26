@@ -58,12 +58,6 @@ body:
         - "MEDIUM"
         - "HIGH"
   - type: textarea
-    id: validation
-    attributes:
-      label: Validation
-      description: Enter details of validation, if applicable.
-      placeholder: validation
-  - type: textarea
     id: consultations
     attributes:
       label: Consultations
@@ -75,3 +69,9 @@ body:
       label: References
       description: Other publications, websites or resources that were reviewed during the drafting of the proposal.
       placeholder: references
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Details of new codes validation, if applicable.  
+      placeholder: validation
