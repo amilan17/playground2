@@ -1,5 +1,6 @@
 name: Proposal for an Amendment
 description: Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procdure.
+title: "[test]"
 body:
   - type: markdown
     attributes:
