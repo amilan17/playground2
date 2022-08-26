@@ -1,0 +1,15 @@
+name: Non-amendment issue
+description: Issue for any topic other than amendments to manuals. 
+body:
+  - type: textarea
+    id: anyTopic
+    attributes:
+      label: details
+      description: Describe the issue, include as much detail as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: contact
+    attributes:
+      label: Requestor
+      description: Name, affiliation and contact details. 
