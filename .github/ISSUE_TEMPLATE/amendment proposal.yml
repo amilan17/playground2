@@ -1,6 +1,6 @@
 name: Proposal for an Amendment
-description: _Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procedure._
-title: "[Enter table name, number, and a very brief description]"
+description: Proposal for amendments to WMO publications that may be submitted for WMO approval with the standard or fast-track procedure.
+title: "[Enter table name, number and a very brief description]"
 body:
   - type: markdown
     attributes:
