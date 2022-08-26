@@ -9,9 +9,8 @@ body:
     id: initial-request
     attributes:
       label: Initial request
-      description: Overview description of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose, users or implementation plans. *This field should not be edited after the issue is submitted to GitHub*.
+      description: Overview description of the amendment(s) requested. Include as much relevant information possible, such as rationale, purpose, stakeholders and implementation plans. *This field should not be edited after the issue is submitted to GitHub*.
       placeholder: Initial request
-      value: "e.g. "
     validations:
       required: true
   - type: textarea
@@ -20,7 +19,6 @@ body:
       label: Originator(s)
       description: Name of individuals, groups, or organizations that are requesting the amendment. Include relevant affiliations, if applicable.
       placeholder: originator
-      value: "e.g. "
     validations:
       required: true
   - type: textarea
@@ -29,7 +27,7 @@ body:
       label: Publication(s)
       description: Publication title, WMO number, relevant volume, part, section, regulation, provision, paragraph or other such subdivisions of the publication to which the amendment applies.
       placeholder: publication
-      value: "e.g. Manual on Codes (WMO-No. 306), Volume I.2, BUFR Table D, Category 01 and CCT 03"
+      value: "Example: Manual on Codes (WMO-No. 306), Volume I.2, BUFR code table 0 20 009"
     validations:
       required: true
   - type: textarea
@@ -39,18 +37,17 @@ body:
       description: Full description of exact changes proposed. This content may evolve as decisions are finalized. 
       placeholder: amendment-details
       value: "Example: 
-FXY|ElementName_en|CodeFigure|EntryName_en
---|--|--|--
-020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
-020009|General weather indicator (TAF/METAR)|6-14|Reserved
-"
+        FXY|ElementName_en|CodeFigure|EntryName_en
+        --|--|--|--
+        020009|General weather indicator (TAF/METAR)|5|NCD No clouds detected
+        020009|General weather indicator (TAF/METAR)|6-14|Reserved
+        "
     validations:
       required: true
   - type: textarea
     attributes:
       label: Comments
       description: Other information that may be informative and relevant.
-      placeholder: "e.g. "
   - type: dropdown
     attributes:
       label: Expected impact of change
@@ -66,18 +63,15 @@ FXY|ElementName_en|CodeFigure|EntryName_en
       label: Validation
       description: Enter details of validation, if applicable.
       placeholder: validation
-      value: "e.g."
   - type: textarea
     id: consultations
     attributes:
       label: Consultations
-      description: Names of WMO Members and WMO bodies, including subsidiary bodies of constituent bodies, that were consulted during, or assisted with, the drafting of the proposal.
+      description: Names of groups or individuals (and affiliation) that were consulted during, or assisted with, the drafting of the proposal.
       placeholder: consultations
-      value: "e.g."
   - type: textarea
     id: references
     attributes:
       label: References
       description: Other publications, websites or resources that were reviewed during the drafting of the proposal.
       placeholder: references
-      value: "e.g."
